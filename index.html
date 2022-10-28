@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <title>Flexbox-Week4</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Registration</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="container">
-    <div class="wrapper">
-      <div class="div-1">
-        <img src="./img/Copy of icon-sedans.svg" alt="" aria-hidden="true" class="image">
-        <h1>SEDANS</h1>
-        <p> Choose a sedan for its <br> affordability and excellent <br> fuel economy. Ideal for <br> cruising in the city or on <br> your next road trip.</p>
-        <h2 class="btn-primary">Learn More </h2>
-      </div>
-      <div class="div-2">
-        <img src="./img/Copy of icon-suvs.svg" alt="" aria-hidden="true" class="image">
-        <h1>SUVS</h1>
-        <p>Take an SUV for its spacious <br> interior, power, and <br> versatility. Perfect for your <br> next family vacation and <br> off-road adventures.
-        </p>
-        <h2 class="btn">Learn More</h2>
-      </div>
-      <div class="div-3">
-        <img src="./img/icon-luxury.svg" alt="" aria-hidden="true" class="image">
-        <h1>LUXURY</h1>
-        <p>Cruise in the best car brands <br> without the bloated prices. <br> Enjoy the enhanced comfort <br> of a luxury rental and arrive <br> in style.</p>
-        <h2 class="btn-primarys">Learn More</h2>
-      </div>
+  <div class="Reg-box">
+    <form class="Reg-form" action="" method="post" name="zuri-reg1" id="reg-01" autocomplete="on">
+
+      <h1 id="header_1" class="form-header"> Registration Form </h1>
+      <h4 id="subheader_1" class="form-subheader"> Please fill in the form below </h4>
+
+      <label for="fname" class="F-name" id="label-1"> First Name <span class="fname-required"> * </span> </label>
+      <input type="text" placeholder="Enter First Name" id="first" required>
+
+      <br>
+      <label for="lname" class="L-name" id="label-2"> Last Name <span class="lname-required"> * </span> </label>
+      <input type="text" placeholder="Enter Last Name" id="last" required>
+
+      <br>
+      <label for="phone" class="phone-no" id="label-3"> Phone Number <span class="phoneno-required"> * </span> </label>
+      <input type="phone" placeholder="Enter Phone Number" id="phone-1" required>
+
+      <br>
+      <label for="email" class="e-mail" id="label-4"> Email <span class="email-required"> * </span> </label>
+      <input type="email" placeholder="myname@example.com" id="email" required>
+
+      <br>
+      <label for="gender" class="gender-1" id="label-5"> Gender <span class="gender-required"> * </span> </label>
+      <select required="required">
+        <option selected="selected" disabled="disabled" value="select-gender"> Select Gender </option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <br>
+      <label for="birthday" class="DOB" id="label-6"> Date of Birth <span class="birthday-required"> * </span> </label>
+      <input type="date" placeholder="Select Date of birth" value="dd-mm-yyyy" id="DOB-1" required>
+
+      <br>
+      <label for="favcolor" class="color" id="label-7"> Favourite Color <span class="color-required"> * </span> </label>
+      <br>
+      <input type="color" id="color-1" required>
+
+      <br>
+      <input type="submit" id="button" value="Register" />
+    </form>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Conditions </a>.</p>
+
+    <div class="log-1">
+      <p>Already have an account? <a href="login.html"><b>Log in</b></a></p>
     </div>
-    <div class="btn-container">
-      <div class="link">
-        <a href="grid.html">
-          <button> Click to see Grid Layout</button>
-        </a>
-      </div>
-    </div>
-  </div>
 
 </body>
 
